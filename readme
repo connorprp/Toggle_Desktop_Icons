@@ -1,0 +1,29 @@
+An AHK script to toggle the visibility of Desktop icons without having to click through the Display menu.
+
+DON'T DOWNLOAD AND/OR RUN .EXE FILES FROM UNKNOWN SOURCES
+
+---------------------------------------------------------
+Compile this script yourself using Ahk2Exe:
+
+First, download and install AutoHotKey: https://www.autohotkey.com/
+
+  GUI Interface: Run the "Convert .ahk to .exe" item in the Start Menu.
+
+  Right-click: Within an open Explorer window, you can right-click any .ahk file and select "Compile Script" (only available if the script compiler option was chosen when AutoHotkey was installed). This creates an EXE file of the same base filename as the script, which appears after a short time in the same directory. Note: The EXE file is produced using the same custom icon, .bin file and use MPRESS setting that were last used by Method #1 above.
+
+  Command Line: The compiler can be run from the command line with the following parameters:
+
+  Ahk2Exe.exe /in MyScript.ahk [/out MyScript.exe] [/icon MyIcon.ico] [/bin AutoHotkeySC.bin] [/mpress 0or1]
+  
+  For example:
+    Ahk2Exe.exe /in "MyScript.ahk" /icon "MyIcon.ico"
+    
+  Usage:
+    Parameters containing spaces should be enclosed in double quotes. If the "out" file is omitted, the EXE will have the same base filename as the script itself.
+-----------------------------------------------------------
+If you absolutely can't compile this yourself, the provided .EXE file will work.
+
+NOTE: For persistence, place the compiled script (.exe) in the startup folder and, inside it;s properties, set it to run as administrator.
+
+
+I couldn't find this tool anywhere else online, so I made it. Enjoy.
